@@ -13,7 +13,7 @@ void main() {
     await tester.pumpWidget(const ProfileCardApp());
     await tester.pumpAndSettle();
 
-    expect(find.text('李雨桐'), findsOneWidget);
+    expect(find.text('王跃达'), findsOneWidget);
     expect(find.text('项目'), findsOneWidget);
     expect(find.text('关注'), findsOneWidget);
     expect(find.text('获赞'), findsOneWidget);

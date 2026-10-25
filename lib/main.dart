@@ -79,6 +79,7 @@ class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: const ValueKey('profile-card'),
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
       decoration: BoxDecoration(
@@ -98,7 +99,7 @@ class ProfileCard extends StatelessWidget {
           const _AvatarWithBadge(),
           const SizedBox(height: 18),
           const Text(
-            '李雨桐',
+            '王跃达',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.w700,
@@ -135,7 +136,7 @@ class _AvatarWithBadge extends StatelessWidget {
           radius: 48,
           backgroundColor: _primary,
           child: Text(
-            'LY',
+            'WYD',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w700,
@@ -169,6 +170,7 @@ class StatsBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: const ValueKey('stats-bar'),
       padding: const EdgeInsets.symmetric(vertical: 16),
       decoration: BoxDecoration(
         color: const Color(0xFFF5F3FF),
@@ -266,6 +268,7 @@ class TagCloud extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Wrap(
+      key: const ValueKey('tag-cloud'),
       alignment: WrapAlignment.center,
       spacing: 8,
       runSpacing: 8,
