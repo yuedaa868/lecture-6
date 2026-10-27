@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:profile_card/lab/alignment_lab_page.dart';
+
 const Color _ink = Color(0xFF111827);
 const Color _muted = Color(0xFF6B7280);
 const Color _primary = Color(0xFF4F46E5);
@@ -43,6 +45,18 @@ class ProfileCardPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         surfaceTintColor: Colors.transparent,
         foregroundColor: const Color(0xFF312E81),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (BuildContext context) => const AlignmentLabPage(),
+                ),
+              );
+            },
+            child: const Text('对齐任务卡'),
+          ),
+        ],
       ),
       body: DecoratedBox(
         decoration: const BoxDecoration(
